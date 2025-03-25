@@ -1,27 +1,154 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: #333;
+/* Sticky Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #002147;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
     color: white;
-    padding: 20px;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.project {
-    background-color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
     padding: 10px;
-    margin: 10px;
+}
+
+.navbar ul li a:hover {
+    background: orange;
+    padding: 10px;
     border-radius: 5px;
+}
+
+/* Content Container */
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* To avoid overlap with navbar */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid orange;
+}
+
+h1 {
+    color: #002147;
+}
+
+h2 {
+    background: #002147;
+    color: white;
+    padding: 5px;
+}
+
+h3 {
+    color: #666;
+}
+
+p, ul {
+    color: #333;
+}
+
+/* Social Links */
+.social-links a {
+    text-decoration: none;
+    color: blue;
+    margin: 5px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul li::before {
+   
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text-content {
+    width: 50%;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.text-content h3 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.image-content {
+    width: 50%;
+    text-align: right;
+}
+
+.image-content img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    border: 5px solid #ddd;
 }
